@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Георгий Руденко](https://up.htmlacademy.ru/htmlcss/28/user/155287).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов] (https://htmlacademy.ru/profile/sench)
 
 ---
 
