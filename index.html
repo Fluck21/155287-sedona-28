@@ -7,15 +7,15 @@
   <body>
 <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
 <header>
-    <a>
-      <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип Sedona">
-    </a>
+      <nav>
+        <a>
+            <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип_Седона">
+        </a>
     
-    <nav>
         <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Карта штата</a></li>    
             <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
     </nav>
@@ -23,42 +23,166 @@
 
 <main>
     <section>
-      <img src="img/welcome.jpg" width="1200" height="509" alt="Welcome">
-      <img src="img/5_Reasons.svg" width="1200" height="272" alt="5_Reasons">
+      <!--<h1>Welcome to the georgeus!</h1>-->
+      <img src="img/background_photo.jpg" width="1200" height="509" alt="Горы Седоны">
+    </section>
+    <section>
+      <!--<h3>Intro-welcome</h3>-->
+      <p>
+      <img src="img/Welcome_to_the_georgeus.png" width="457" height="351" alt="Добро пожаловать">
+      </p>
     </section>
   
       <section>
+            <!--<h3>five reasons</h3>-->
         <p>
-            <img src="img/reason_1.png" width="1200" height="256" alt="Reason_1">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
         </p>
         <p>
-            <img src="img/description_of_reasons.png" width="1200" height="194" alt="description_of_reasons">
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
       </section>
-      
+
+        <!--Reason 1-->
+    <section>
+        <p>
+          Настоящий городок
+        </p>
+        <span>
+          — №1 —
+        </span>
+        <p>
+          Седона - не аттракцион для туристов, там течёт своя жизнь
+        </p>
+        <img src="img/real_city.jpg" width="800" height="256" alt="Настоящий городок">
+    </section>
+<br>
+        <section>
+            <a href="#">
+              <img src="img/icon-house.svg" width="75" height="72" alt="Жилье">
+            </a>
+          <p>
+          ЖИЛЬЕ
+          </p>
+        </section>
+        <br>
+        <section>
+          <a href="#">
+            <img src="img/icon-meal.svg" width="75" height="72" alt="Еда">
+          </a>
+          <p>
+          ЕДА
+          </p>
+        </section>
+        <br>
+        <section>
+          <a href="#">
+          <img src="img/icon-souvenirs.svg" width="75" height="72" alt="СУВЕНИРЫ">
+        </a>
+        <p>
+        СУВЕНИРЫ
+        </p>
+      </section>
+
+
+        <!--Reason 2-->
       <section>
         <p>
-            <img src="img/reason_2.png" width="1200" height="256" alt="reason_2">
-            <img src="img/5_reasons_2.png" width="1200" height="256" alt="5_reasons_2">
+            Там есть мост дьявола
         </p>
+        <span>
+          -2-
+        </span>
+        <p>
+          Да, по нему можно пройти! Если конечно вы осмелитесь
+        </p>
+        <img src="img/devil's_bridge.jpg" width="800" height="256" alt="Мост дьявола">
       </section>
 
+        <!--Reason 3-->
     <section>
-      <img src="img/interested.svg" width="435" height="157" alt="interested">
+      <p>
+        Небольшая площадь
+      </p>
+      <span>
+        — №3 —
+      </span>
+      <p>
+        Все достопримечательности находятся очень близко
+      </p>
     </section>
  
+        <!--Reason 4-->
     <section>
-      <img src="img/hotel_search.svg" width="568" height="86" alt="hotel_search">
-      <img src="img/map.png" width="1200" height="474" alt="Map-Sedona">
+      <p>
+        Красивая дорога
+      </p>
+      <span>
+        — №4 —
+      </span>
+      <p>
+        Ехать в седону из лас-вегаса совсем не скучно!
     </section>
 
-
+          <!--Reason 5-->
+    <section>
+      <p>
+        Мало ткристов
+      </p>
+      <span>
+        — №5 —
+      </span>
+      <p>
+        Большинство едет в гранд каньон и толпится там
+    </section>
+   
+    <section>
+      <h2>Заинтересовались?</h2>
+      <p>
+        Заинтересовались? Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+    </section>
+    <section>
+      <img src="img/map.png" width="1200" height="474" alt="Карта">
+    </section>
+    <section>
+      <h2>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="date_of_arrival">Дата заезда:</label>
+          <input id="date_of_arrival" type="text" name="date" placeholder="24 Апреля 2017">
+          <button type="button">Календарь</button>
+        </p>
+        <p>
+          <label for="date_of_departure">Дата выезда:</label>
+          <input id="date_of_departure" type="text" name="date" placeholder="4 Июля 2017">
+          <button type="button">Календарь</button>
+        </p>
+        <p>
+          <label for="Adults">Взрослые:</label>
+          <button type="button">-</button>
+          <input id="Adults" type="text" name="number" placeholder="2">
+          <button type="button">+</button>
+        </p>
+        <p>
+          <label for="Children">Дети:</label>
+          <button type="button">-</button>
+          <input id="Children" type="text" name="number" placeholder="0">
+          <button type="button">+</button>
+        </p>
+        <p>
+          <button type="button">НАЙТИ</button>
+        </p>
+    </form>
+    </section>
 </main>
 
 <footer>
   <section>
     <p>
-      <img src="img/visitSEDONA.svg" width="166" height="26" alt="visitsedonia">
+        <a href="#">
+          <span>#VISITSEDONIA</span>
+        </a>
     </p>
     <p>
       <a href="tel:+74956660166">
@@ -69,13 +193,19 @@
 
   <section>
     <p>
+        <a href="#">
       <img src="img/icon_Twitter.svg" width="46" height="48" alt="Twitter">
+        </a>
     </p>
     <p>
+        <a href="#">
       <img src="img/icon_Fb.svg" width="46" height="48" alt="Facebook">
+        </a>
     </p>
     <p>
+        <a href="#">
       <img src="img/icon_youtube.svg" width="46" height="48" alt="Youtube">
+        </a>
     </p>
   </section>
  
@@ -87,6 +217,5 @@
 </footer>
 
 </body>
-
 </html>
 
