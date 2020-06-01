@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
 :root {
   --basic-black:  #000000;
   --basic-white:  #FFFFFF;
@@ -5,17 +7,20 @@
   --basic-brown:  #766357;
   --detailed-put:  #669EC0;
   --detailed-press:  #5496BD;
-  --book-put: #604E43;
-  --book-press: #503E33;
-  --htmlacademy-put: #669EC0;
-  --htmlacademy-press:#5496BD;
+  --book-put:  #604E43;
+  --book-press:  #503E33;
+  --social-btn-put:  #669EC0;
+  --social-btn-press:  #5496BD;
+  --htmlacademy-put:  #669EC0;
+  --htmlacademy-press:  #5496BD;
 }
 
 
 /* Global */
 
+
 body {
-  min-width: 960;
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", "Arial", "sans-serif";
@@ -35,8 +40,12 @@ img {
   height: auto;
 }
 
-li {
-list-style-type: none;
+.social-icon ul {
+  list-style-type: none;
+}
+
+.navigation ul {
+  list-style-type: none;
 }
 
 /* Hotel filter */
@@ -49,9 +58,9 @@ list-style-type: none;
     padding: 16px 182px;
     color: var(--basic-white);
     width: 458px;
-    height: 58;
+    height: 58px;
     font-weight: bold;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial";
     font-style: normal;
 }
 
@@ -70,9 +79,9 @@ list-style-type: none;
     padding: 16px 182px;
     color: var(--basic-white);
     width: 568px;
-    height: 86;
+    height: 86px;
     font-weight: bold;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial";
     font-style: normal;
 }
 
@@ -88,11 +97,11 @@ list-style-type: none;
     font-size: 14px;
     background-color: var(--basic-blue); 
     padding: 3px 16px;
-    color: #FFFFFF;
+    color: var(--basic-white);
     width: 110px;
-    height: 27;
+    height: 27px;
     font-weight: bold;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial";
     font-style: normal;
 }
 
@@ -112,7 +121,7 @@ background-color: var(--detailed-press);
   width: 142px;
   height: 27px;
   font-weight: bold;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial";
   font-style: normal;
 }
 
@@ -133,7 +142,7 @@ background-color: var(--book-press);
     width: 240px;
     height: 26px;
     font-weight: bold;
-    font-family: PT Sans;
+    font-family: "PT Sans", "Arial";
     font-style: normal;
 
 }
@@ -148,22 +157,37 @@ background-color: var(--book-press);
   opacity: 0.3;
 }
 
-.logo-htmlacademy a {
-  position: relative;
-  text-decoration: none;
-  font-size: 21px;
-  background-color: var(--basic-white); 
-  color: var(--basic-black);
-  font-weight: bold;
-  font-family: PT Sans;
-  font-style: normal;
+
+/*footer*/
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
-.logo-htmlacademy a:hover {
-  color: var(--htmlacademy-put);
+.social-button {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: var(--basic-blue);
+  margin: 6px;
 }
 
-.logo-htmlacademy a:focus {
+.social {
+  display: block;
+  margin: auto;
+  padding: 13px;
+}
+
+.logo-htmlacademy:hover path {
+    fill: var(--htmlacademy-put);
+}
+
+.logo-htmlacademy:active path {
   color: var(--htmlacademy-press);
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
-
