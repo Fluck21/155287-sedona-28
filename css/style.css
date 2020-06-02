@@ -13,9 +13,33 @@
   --social-btn-press:  #5496BD;
   --htmlacademy-put:  #669EC0;
   --htmlacademy-press:  #5496BD;
+  --nav-put: #669EC0;
+  --nav-press: #5496BD;
 }
 
+/* Navigation */
+header {
+  display: flex;
+  
+  align-items: center;
+  padding: 0px 10px;
+  height: 56px;
+  background-color: var(--basic-white);
+}
 
+.nav_links {
+  display: inline-block;
+  padding: 94px 26px;
+  margin: 150px;
+}
+
+.nav_links li a:hover {
+  color: var(--nav-put);
+}
+
+.nav_links li a:hover {
+  color: var(--nav-press);
+}
 /* Global */
 
 
@@ -31,6 +55,11 @@ body {
   background-color: var(--basic-white);
 }
 
+.nav_links li {
+  display: inline-block;
+  padding: 94px 26px;
+}
+
 a {
   text-decoration: none;
 }
@@ -40,28 +69,29 @@ img {
   height: auto;
 }
 
-.social-icon ul {
+.social-icon ul, .nav_links ul, .found ul, .result-of-search ul {
   list-style-type: none;
+  margin: 0; padding: 0;
 }
 
-.navigation ul {
-  list-style-type: none;
-}
+
 
 /* Hotel filter */
 
+.button-default a {
+  text-decoration: none;
+  font-size: 21px;
+  color: white;
+  font-weight: bold;
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-style: normal;
+}
 
-.btn-search a {
-    text-decoration: none;
-    font-size: 21px;
+.btn-search a {    
     background-color: var(--basic-blue);
     padding: 16px 182px;
-    color: var(--basic-white);
     width: 458px;
     height: 58px;
-    font-weight: bold;
-    font-family: "PT Sans", "Arial";
-    font-style: normal;
 }
 
 .btn-search a:hover {
@@ -73,16 +103,10 @@ img {
 }
 
 .btn-search-of-hotels a {
-    text-decoration: none;
-    font-size: 21px;
     background-color: var(--basic-brown); 
     padding: 16px 182px;
-    color: var(--basic-white);
     width: 568px;
     height: 86px;
-    font-weight: bold;
-    font-family: "PT Sans", "Arial";
-    font-style: normal;
 }
 
 .btn-search-of-hotels a:hover {
@@ -93,16 +117,12 @@ img {
   background-color: var(--book-press);
 }
 
-.btn-detailed a {
-    font-size: 14px;
+.btn-detailed a {   
+    font-size: 14px; 
     background-color: var(--basic-blue); 
-    padding: 3px 16px;
-    color: var(--basic-white);
+    padding: 3px 16px;    
     width: 110px;
-    height: 27px;
-    font-weight: bold;
-    font-family: "PT Sans", "Arial";
-    font-style: normal;
+    height: 27px;  
 }
 
 .btn-detailed  a:hover {
@@ -114,15 +134,11 @@ background-color: var(--detailed-press);
 }
 
 .btn-book a {
-  font-size: 14px;
+  font-size: 14px; 
   background-color: var(--basic-brown); 
   padding: 3px 16px;
-  color: #FFFFFF;
   width: 142px;
   height: 27px;
-  font-weight: bold;
-  font-family: "PT Sans", "Arial";
-  font-style: normal;
 }
 
 .btn-book a:hover {
@@ -142,7 +158,7 @@ background-color: var(--book-press);
     width: 240px;
     height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", "Arial";
+    font-family: "PT Sans", "Arial", "sans-serif";
     font-style: normal;
 
 }
@@ -191,3 +207,4 @@ background-color: var(--book-press);
   mix-blend-mode: normal;
   opacity: 0.3;
 }
+

@@ -9,21 +9,19 @@
 
   <body>
 
-  <header>
-    <nav class="navigation">
-      <a>
-        <img src="img/logo-sedona.svg" width="138" height="70" alt="Логотип_Седона">
-      </a>
-
-      <ul class="site-navigation">
+<header>
+    
+    <nav class="nav_links">
+        <ul>
             <li><a href="#" aria-label="Информация">Информация</a></li>
             <li><a href="#" aria-label="Фото">Фото и видео</a></li>
+            <li><img src="img/logo-sedona.svg" class="logo" width="138" height="70" alt="Логотип_Седона"></li>
             <li><a href="#" aria-label="Карта">Карта штата</a></li>    
             <li><a href="hotels.html" aria-label="Гостиницы">Гостиницы</a></li>
         </ul>
     </nav>
-  </header>
-
+</header>
+<br>
 <main>
     <section>
       <!--<h1>Welcome to the georgeus!</h1>-->
@@ -151,7 +149,7 @@
     <section class="hotel-search">
       
       <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="btn-search-of-hotels">
+        <div class="button-default btn-search-of-hotels">
           <a href="#" aria-label="Показать">Поиск гостиницы в седоне</a>
         </div>
         <p>
@@ -165,19 +163,19 @@
           <img src="img/calendar.svg" width="21" height="23" alt="Календарь">
         </p>
         <p>
-          <label for="Adults">Взрослые:</label>
+          <label for="adults">Взрослые:</label>
           <button aria-label="Минус" type="button">-</button>
-          <input id="Adults" type="text" name="number" placeholder="2">
+          <input id="adults" type="text" name="number" placeholder="2">
           <button aria-label="Плюс" type="button">+</button>
         </p>
         <p>
-          <label for="Children">Дети:</label>
+          <label for="children">Дети:</label>
           <button aria-label="Минус" type="button">-</button>
-          <input id="Children" type="text" name="number" placeholder="0">
+          <input id="children" type="text" name="number" placeholder="0">
           <button aria-label="Плюс" type="button">+</button>
         </p>
         <br>
-        <div class="btn-search">
+        <div class="button-default btn-search">
           <a href="#" aria-label="Показать">Найти</a>
         </div>
     </form>
